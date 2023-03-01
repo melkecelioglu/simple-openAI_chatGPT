@@ -43,14 +43,12 @@ async function onSubmit(e) {
   return (
     <div className={styles.body}>      
       <Head>
-       {console.log('this works?')} 
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/yhye4cosb7271 00.49.38.png" />
       </Head>
       <main className={styles.main}>
-       <img src='/favicon.ico' className={styles.icon} />
-       <h3>Name My Pet</h3>
-       <p>You've used this app {count} times</p>
+       <img src='/yhye4cosb7271 00.49.38.png' className={styles.icon} />
+       <h3>Name It</h3>
        <form onSubmit={onSubmit}>
           <input
           type='text'
@@ -61,15 +59,10 @@ async function onSubmit(e) {
             console.log(animalInput)
           }
         } 
-          placeholder='Enter an animal'
+          placeholder='Enter a name'
           />
           <input
-            type="submit" onClick={(e) => {
-              e.preventDefault()
-              if(count==10){
-              console.log('you have reched your limit')
-            }
-             setCounter(count + 1)}}
+            type="submit" 
             value="Generate names"/>
        </form>
        <div className={styles.result}>{result}</div>
